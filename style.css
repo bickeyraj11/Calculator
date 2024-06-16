@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+#container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+#card {
+    width: 350px;
+    height: 520px;
+    background: wheat;
+    box-shadow: 0 0 10px 0;
+    border-bottom: 10px solid ;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+#card h1{
+    color: rgb(255, 142, 3);
+}
+#ab {
+    font-size: small;
+}
+
+#title {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#result {
+    border: 1px solid gray;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+#cal-box {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 18px;
+    margin-bottom: 2px;
+}
+
+#cal-btm {
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: rgb(214, 205, 205);
+    width: calc(25% - 12px);
+    text-align: center;
+    border: none;
+}
+
+#cal-btm:hover {
+    background: black;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#alert {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#on-off-btn {
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: dodgerblue;
+    text-align: center;
+    border: none;
+    position: relative;
+}
+
+#on-off-btn:hover {
+    background: black;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.indicator-light {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    #card {
+        height: 100%;
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    #card {
+        width: 100%;
+        overflow: hidden;
+    }
+    #cal-btm {
+        border-radius: 15px;
+        font-size: 18px;
+        padding: 10px 20px;
+        background: rgb(214, 205, 205);
+        width: calc(25% - 12px);
+        height: 80px;
+        text-align: center;
+        border: none;
+    }
+    #cal-box{
+        margin-bottom: 35px;
+    }
+    
+    #container {
+        display: flex;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+}

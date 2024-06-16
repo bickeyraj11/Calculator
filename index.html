@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js'></script>
+</head>
+<body>
+    <div id="container">
+        <div id="card">
+            <h1 id="title">CALCULATOR <span id="ab">By Sunny Kumar</span></h1>
+            <p id="alert"></p>
+            <input id="result" placeholder="Calculate Off" disabled>
+            <div id="cal-box">
+                <button id="on-off-btn" style="width: 30%;" onclick="toggleCalculator()">
+                    ON/AC
+                    <span id="indicator-light" class="indicator-light"></span>
+                </button>
+                <button id="cal-btm" style="width: 30%;" onclick="even()">EVEN</button>
+                <button id="cal-btm" style="width: 30%;" onclick="odd()">ODD</button>
+                
+                <button id="cal-btm" onclick="input(7)">7</button>
+                <button id="cal-btm" onclick="input(8)">8</button>
+                <button id="cal-btm" onclick="input(9)">9</button>
+                <button id="cal-btm" onclick="input('*')">*</button>
+
+                <button id="cal-btm" onclick="input(4)">4</button>
+                <button id="cal-btm" onclick="input(5)">5</button>
+                <button id="cal-btm" onclick="input(6)">6</button>
+                <button id="cal-btm" onclick="input('-')">-</button>
+
+                <button id="cal-btm" onclick="input(1)">1</button>
+                <button id="cal-btm" onclick="input(2)">2</button>
+                <button id="cal-btm" onclick="input(3)">3</button>
+                <button id="cal-btm" onclick="input('+')">+</button>
+
+                <button id="cal-btm" onclick="input(0)">0</button>
+                <button id="cal-btm" onclick="input('.')">.</button>
+                <button id="cal-btm" onclick="cancel()">C</button>
+                <button id="cal-btm" onclick="calc()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
